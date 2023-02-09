@@ -1,6 +1,6 @@
 # Clean node
 
-## Tecnologies
+## Setup
   - git conventional 
     [https://www.conventionalcommits.org/en/v1.0.0/]
   - git commit msg linter
@@ -22,5 +22,21 @@
     - comitar encima de um comite ja feito
       - Juntar no comite anterio 
       - git commit --amend --no-edit
+    - husky permite ao nosso progeto definir hooks p nosso git
+      - seria comando q podem ser executados antes da gente 
+      - fazer um commit ou push
+      - npm i husky -D 
+        - create file `.huskyrc.json` 
+        - temos um problema caso tenha muitos meninos p comitar
+        - npm i -D lint-staged
+          - ele permite q rodemos script somente em nosso stage areas
+            - Ou seja rodar o script somente nos arqs modificados
+            - create file `.lintstagedrc.json`
+  - jest para teste
+    - npm i -D jest @types/jest ts-jest
+    - com ele instalado vamos criar o arq de configuracion
+      - jest --init
+        - [ yes, node, yes, no]
+  - 
 
 
